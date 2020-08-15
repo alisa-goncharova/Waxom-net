@@ -1,0 +1,14 @@
+﻿ <!-- <div class="shop">-->
+<!--<p>Services that provided by our company</p>-->
+<!--<h3>собакаModel.sittCategory</h3>-->
+<!--<div class="row mt-5 mb-2">-->
+@{
+    foreach (Site site in Model.allSites)
+    {
+        @Html.Partial("AllSites", site)
+    }
+
+
+}
+<!--</div>
+<!--   </div>-->

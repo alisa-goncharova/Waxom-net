@@ -1,0 +1,274 @@
+@media screen and (max-width: 2560px){
+.section{
+ 	display: none;
+ }
+.none a {
+	display: none;
+}
+}
+@media screen and (max-width: 1440px) { /*and min-width: 1024px*/
+.top-title p {
+    color: #fff;
+}
+}
+@media screen and (max-width: 1024px ){  /*and min-width: 768px*/
+/* первый блок header*/
+.top-title p {
+	font-size: 30px;
+ }
+
+.top-container p {
+
+	font-size: 12px;
+}
+.top-button p {
+
+	font-size: 14px;
+}
+ .menu-container ul li a {
+
+ 	font-size: 11px;
+ }
+ .menu-container ul li {
+ 	padding-left: 24px;
+ }
+ .menu-logo {
+ 	padding-left: 20px;
+ }
+.menu-logo p {
+
+	font-size: 30px;
+}
+.menu-logo img {
+	width:65px;
+} }
+ @media screen and (max-width: 768px){  
+ .top-title p {
+	font-size: 25px;
+ }
+ .top-title::after{
+ 	top: 20%;
+ }
+.top-content p {
+	font-size: 13px;
+}
+.top-button p {
+	font-size: 12px;
+}
+.menu-container {
+	display: none;
+}
+.section{
+	display: block;
+}
+.swiper-slide {
+	padding-top: 10px;
+}
+.menu-logo p {
+	font-size: 27px;
+}
+.about-image {
+	/*padding-right: 45px;*/
+}
+.about-content-items p{
+	font-size: 12px;
+}
+.about-content-title p{
+	font-size: 20px
+}
+.about-button p{
+	margin-right: auto;
+	margin-left: auto;
+}
+.about-button p{
+	font-size: 12px;
+}
+.about-image img{
+	width: 120%;
+}
+.team-middle__items:nth-child(3){
+	margin-right: 0px;
+}
+}
+ @media screen and (max-width: 425px){  /*and min-width: 768px*/
+ .about
+ {
+ 	display: inline-block;
+ }
+ .about-image{
+ 	text-align: center;
+ 	padding-right: 0px;
+ 	
+ }
+ .about-content-items p{
+ 	font-size: 13px;
+ }
+ .about-image img {
+ 	width: 50%;
+ 	
+ }
+ .about-content-title p{
+ 	text-align: center;
+ 	
+ }
+ .menu-btn{
+ 	width: 50px;
+ 	transform: translateY(-59px);
+
+ }
+.cart-link-responcive{
+	display: none;
+}
+.none a{
+	display: block;
+}
+.menu-nav_active{
+	height: auto;
+	position: absolute;
+	z-index: 2;
+
+}
+.menu-block{
+	position: relative;
+	justify-content: flex-end;
+	padding-top:0;
+}
+.menu-nav{
+	position: absolute;
+	border-radius: 25px 25px 25px 25px;
+	right: 100px;
+	padding-right: 60px;
+	padding-left:60px;
+	padding-top: 25px;
+	padding-bottom: 25px;
+	box-shadow: 5px 3px 20px 2px black;
+	transform: translateY(90px);
+}
+.menu-nav a{
+	display: block;
+	text-align: center;
+
+}
+
+.top-button{
+	margin: auto;
+}
+.team-bottom__btn{
+	margin-top: 20px;
+}
+.team-middle__items{
+	margin-left: 0;
+}
+.team-middle__items{
+	margin-right: 0px;
+}
+
+.works-top-title p{
+	font-size: 20px;
+}
+.works-steps__item-content {
+	min-width: 0
+}
+.works-steps__item-content p{
+	font-size: 23px
+}
+.works-steps__item-content-title p{
+font-size: 13px
+}
+
+.footer-content__item{
+	padding-bottom: 20px;
+}
+.footer-content__item-logo{
+	justify-content: center;
+}
+.footer-content__item-logo img{
+	position: relative;
+}
+.footer-content__item-logo p{
+	padding-left: 0;
+}
+.footer-content__item-title{
+	justify-content: center;
+}
+}
+  @media screen and (max-width: 375px){  /*and min-width: 768px*/
+ .top-title p {
+	font-size: 20px;
+ }
+ .top-title::after{
+ 	top: 18%;
+ }
+ .top-content p {
+ 	font-size: 10px;
+ }
+ .top-button p {
+ 	font-size: 12px;
+ }
+ .menu{
+ 	padding-top: 5px;
+ }
+ .menu-logo p {
+ 	font-size: 20px;
+ }
+ .swiper-slide {
+ 	padding-top: 5px;
+ }
+ .swiper-container-horizontal > .swiper-pagination-bullets {
+ 	bottom: 27px;
+ }
+ .menu-btn{
+ 	
+ 	transform: translateY(-50px);
+
+ }
+ .menu-nav{
+ 	transform: translateY(112px);
+ }
+/* //конец первого блока*/
+.about-content-items p{
+	font-size: 10px;
+}
+
+.footer-content__item-icon-instance{
+	margin-bottom: 10px;
+}
+.footer-content__item-icon-instance{
+	width: calc(100%/3);
+}
+.footer-content__item-icon{
+	max-width: 110px
+}
+
+}
+  @media screen and (max-width: 320px){  /*and min-width: 768px*/
+.top-title::after{
+ 	top: 20%;
+ }
+
+ .swiper-container-horizontal > .swiper-pagination-bullets {
+ 	bottom: 23px;
+ }
+
+.works-top-title p{
+	font-size: 20px
+}
+.works-steps__item-content p{
+	font-size: 15px
+}
+
+.works-steps__item-content-title p{
+	font-size: 12px;
+}
+.works-steps__item-icon{
+	margin-right: 25px;
+}
+}
+
+/*4k = 2560px
+laptop l = 1440px
+laptop = 1024px
+tablet = 768px
+mobile l = 425px
+mobile m = 375px
+mobile s = 320px*/

@@ -1,0 +1,188 @@
+﻿
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width-device-width" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Waxom</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" contextmenu="css/text">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@700&family=Roboto:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@700&family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Playfair+Display+SC:wght@900&display=swap" rel="stylesheet"> -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@700&family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Hammersmith+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="~/css/shop.css">
+    <link rel="stylesheet" type="text/css" href="~/css/shop-responciv.css">
+    <link href="~/css/checkout.css" rel="stylesheet" />
+</head>
+<body id="bootstrap-overrides">
+    <div class="wrapper">
+        <header>
+            <nav class="menu" id="home">
+                <div class=menu-logo>
+                    <img id="Gradient1" src="~/img/header/header-logo.svg" alt="">
+                    <p>Waxom</p>
+                </div>
+                <div class="menu-container">
+                    <ul>
+                        <li><a href="@Url.Action("Index" , "Home")">Home</a></li>
+                        <li><a href="@Url.Action("Index" , "Home")">About</a></li>
+                        <li><a href="@Url.Action("Index" , "Home")">Teams</a></li>
+                        <li><a href="@Url.Action("Index" , "Home")">How it Works?</a></li>
+                        <li><a asp-controller="Sites" asp-action="List">Shop</a></li>
+                        <li><a href="@Url.Action("Index" , "Home")">Contact</a></li>
+                        <li class="cart-link">
+                            <a href="@Url.Action("Index" , "ShopSite")">
+                                <span>
+
+
+                                    <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                         viewBox="0 0 321.2 321.2" style="enable-background:new 0 0 321.2 321.2;" xml:space="preserve" fill="white">
+<g>
+                                    <g>
+                                    <path d="M306.4,313.2l-24-223.6c-0.4-3.6-3.6-6.4-7.2-6.4h-44.4V69.6c0-38.4-31.2-69.6-69.6-69.6c-38.4,0-69.6,31.2-69.6,69.6
+      v13.6H46c-3.6,0-6.8,2.8-7.2,6.4l-24,223.6c-0.4,2,0.4,4,1.6,5.6c1.2,1.6,3.2,2.4,5.2,2.4h278c2,0,4-0.8,5.2-2.4
+      C306,317.2,306.8,315.2,306.4,313.2z M223.6,123.6c3.6,0,6.4,2.8,6.4,6.4c0,3.6-2.8,6.4-6.4,6.4c-3.6,0-6.4-2.8-6.4-6.4
+      C217.2,126.4,220,123.6,223.6,123.6z M106,69.6c0-30.4,24.8-55.2,55.2-55.2c30.4,0,55.2,24.8,55.2,55.2v13.6H106V69.6z
+       M98.8,123.6c3.6,0,6.4,2.8,6.4,6.4c0,3.6-2.8,6.4-6.4,6.4c-3.6,0-6.4-2.8-6.4-6.4C92.4,126.4,95.2,123.6,98.8,123.6z M30,306.4
+      L52.4,97.2h39.2v13.2c-8,2.8-13.6,10.4-13.6,19.2c0,11.2,9.2,20.4,20.4,20.4c11.2,0,20.4-9.2,20.4-20.4c0-8.8-5.6-16.4-13.6-19.2
+      V97.2h110.4v13.2c-8,2.8-13.6,10.4-13.6,19.2c0,11.2,9.2,20.4,20.4,20.4c11.2,0,20.4-9.2,20.4-20.4c0-8.8-5.6-16.4-13.6-19.2V97.2
+      H270l22.4,209.2H30z" />
+
+
+
+
+
+
+      
+  </g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g>
+</svg>
+                                </span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <!-- Адаптивное декстопное меня новигации -- начало  -->
+            <div class="section">
+                <div class="menu-block">
+                    <nav class="menu-nav">
+                        <a href="@Url.Action("Index" , "Home")">HOME</a>
+                        <a href="@Url.Action("Index" , "Home")">ABOUT</a>
+                        <a href="@Url.Action("Index" , "Home")">TEAMS</a>
+                        <a href="@Url.Action("Index" , "Home")">HOW IT WORKS?</a>
+                        <a href="#">SHOP</a>
+                        <a href="@Url.Action("Index" , "Home")">CONTACT</a>
+                        <!-- <a href="#" class="none">Корзина</a> -->
+                    </nav>
+                    <a href="#" class="menu-btn">
+                        <span></span>
+                    </a>
+                </div>
+                <div class="cart-link-responcive">
+                    <a href="@Url.Action("Index" , "ShopSite")">
+                        <span>
+                            <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                 viewBox="0 0 321.2 321.2" style="enable-background:new 0 0 321.2 321.2;" xml:space="preserve" fill="white">
+<g>
+                            <g>
+                            <path d="M306.4,313.2l-24-223.6c-0.4-3.6-3.6-6.4-7.2-6.4h-44.4V69.6c0-38.4-31.2-69.6-69.6-69.6c-38.4,0-69.6,31.2-69.6,69.6
+      v13.6H46c-3.6,0-6.8,2.8-7.2,6.4l-24,223.6c-0.4,2,0.4,4,1.6,5.6c1.2,1.6,3.2,2.4,5.2,2.4h278c2,0,4-0.8,5.2-2.4
+      C306,317.2,306.8,315.2,306.4,313.2z M223.6,123.6c3.6,0,6.4,2.8,6.4,6.4c0,3.6-2.8,6.4-6.4,6.4c-3.6,0-6.4-2.8-6.4-6.4
+      C217.2,126.4,220,123.6,223.6,123.6z M106,69.6c0-30.4,24.8-55.2,55.2-55.2c30.4,0,55.2,24.8,55.2,55.2v13.6H106V69.6z
+       M98.8,123.6c3.6,0,6.4,2.8,6.4,6.4c0,3.6-2.8,6.4-6.4,6.4c-3.6,0-6.4-2.8-6.4-6.4C92.4,126.4,95.2,123.6,98.8,123.6z M30,306.4
+      L52.4,97.2h39.2v13.2c-8,2.8-13.6,10.4-13.6,19.2c0,11.2,9.2,20.4,20.4,20.4c11.2,0,20.4-9.2,20.4-20.4c0-8.8-5.6-16.4-13.6-19.2
+      V97.2h110.4v13.2c-8,2.8-13.6,10.4-13.6,19.2c0,11.2,9.2,20.4,20.4,20.4c11.2,0,20.4-9.2,20.4-20.4c0-8.8-5.6-16.4-13.6-19.2V97.2
+      H270l22.4,209.2H30z" />
+
+
+
+
+
+
+      
+  </g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g>
+</svg>
+                        </span>
+                    </a>
+                </div>
+            </div>
+        </header>
+        <div class="servises-block">
+            @RenderBody()
+        </div>
+        <footer>
+            <div class="footer-block">
+                <div class="footer-content">
+                    <div class="footer-content__item">
+                        <div class="footer-content__item-logo">
+                            <img src="~/img/header/header-logo.svg" alt="">
+                            <p>Waxom</p>
+                        </div>
+                        <div class="footer-content__item-descriotion">
+
+                            <p>
+                                The front-end developer of this web site is - Goncharova Alisa.<br>
+                                This web site was created as an example of a portfolio and<br> does not claim
+                                any rights, all coincidences with real people<br> are an accident.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="footer-content__item">
+                        <div class="footer-content__item-title">
+                            <p>Our Studio</p>
+                        </div>
+                        <div class="footer-content__item-strit">
+                            <img src="~/img/footer/location-icon.svg" alt="">
+                            <p>Ruko cucruk, Jl. Radio luar dalem jos<br> No.12 - 13, Kalideres - Jacarta Barat<br> 11489 - Indonesia</p>
+                        </div>
+                        <div class="footer-content__item-number">
+                            <img src="~/img/footer/phone.svg" alt="">
+                            <p>+375(33)315-23-96</p>
+                        </div>
+                    </div>
+                    <div class="footer-content__item">
+                        <div class="footer-content__item-title">
+                            <p>Stay in Touch</p>
+                        </div>
+                        <div class="footer-content__item-icon">
+
+                            <div class="footer-content__item-icon-instance">
+                                <a><img src="~/img/footer/facebook.svg" alt=""></a>
+                            </div>
+
+                            <div class="footer-content__item-icon-instance">
+                                <a><img src="~/img/footer/twitter.svg" alt=""></a>
+                            </div>
+
+                            <div class="footer-content__item-icon-instance">
+                                <a><img src="~/img/footer/vk.svg" alt=""></a>
+                            </div>
+
+                            <div class="footer-content__item-icon-instance">
+                                <a><img src="~/img/footer/instagram.svg" alt=""></a>
+                            </div>
+
+                            <div class="footer-content__item-icon-instance">
+                                <a><img src="~/img/footer/telegram.svg" alt=""></a>
+                            </div>
+
+                            <div class="footer-content__item-icon-instance">
+                                <a><img src="~/img/footer/youtube.svg" alt=""></a>
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src=" https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <script src="~/js/jquery-2.2.4.min.js" type="text/javascript"></script>
+    <script src="~/js/min.js" type="text/javascript"></script>
+</body>
+</html>

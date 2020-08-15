@@ -1,0 +1,175 @@
+﻿@{
+
+    Layout = null;
+}
+<!doctype html>
+<html lang="en">
+
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Waxom</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="~/admin/assets/vendor/bootstrap/css/bootstrap.min.css">
+    <link href="~/admin/assets/vendor/fonts/circular-std/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="~/admin/assets/libs/css/style.css">
+    <link rel="stylesheet" href="~/admin/assets/vendor/fonts/fontawesome/css/fontawesome-all.css">
+</head>
+
+<body>
+    <!-- ============================================================== -->
+    <!-- main wrapper -->
+    <!-- ============================================================== -->
+    <div class="dashboard-main-wrapper">
+        <!-- ============================================================== -->
+        <!-- navbar -->
+        <!-- ============================================================== -->
+        <div class="dashboard-header">
+            <nav class="navbar navbar-expand-lg bg-white fixed-top">
+                <a class="navbar-brand" asp-controller="Admin"  asp-action="Index">Waxom</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </nav>
+        </div>
+        <!-- ============================================================== -->
+        <!-- end navbar -->
+        <!-- ============================================================== -->
+        <!-- ============================================================== -->
+        <!-- left sidebar -->
+        <!-- ============================================================== -->
+        <div class="nav-left-sidebar sidebar-dark">
+            <div class="menu-list">
+                <nav class="navbar navbar-expand-lg navbar-light">
+                    <a class="d-xl-none d-lg-none" href="#">Dashboard</a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav flex-column">
+                            <li class="nav-divider">
+                                Menu
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="#" data-toggle="collapse" aria-expanded="false" data-target="#submenu-5" aria-controls="submenu-5"><i class="fas fa-fw fa-table"></i>Tables</a>
+                                <div id="submenu-5" class="collapse submenu" style="">
+                                    <ul class="nav flex-column">
+                                        <li class="nav-item">
+                                            <a class="nav-link" asp-controller="Admin" asp-action="Service">Service Tables</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" asp-controller="Admin" asp-action="Order">Order Tables</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="nav-divider">
+                                Features
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#" data-toggle="collapse" aria-expanded="false" data-target="#submenu-6" aria-controls="submenu-6"><i class="fas fa-fw fa-file"></i>Pages</a>
+                                <div id="submenu-6" class="collapse submenu" style="">
+                                    <ul class="nav flex-column">
+
+                                        <li class="nav-item">
+                                            <a class="nav-link" asp-controller="Admin" asp-action="Add">Add</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" asp-controller="Admin" asp-action="Delete">Delete</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" asp-controller="Admin" asp-action="Edit">Edit</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <!-- ============================================================== -->
+        <!-- end left sidebar -->
+        <!-- ============================================================== -->
+        <!-- ============================================================== -->
+        <!-- wrapper  -->
+        <!-- ============================================================== -->
+        <div class="dashboard-wrapper">
+            <div class="container-fluid dashboard-content">
+                <!-- ============================================================== -->
+                <!-- pageheader -->
+                <!-- ============================================================== -->
+                <div class="row">
+                    <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                        <div class="page-header">
+                            <h2 class="pageheader-title">Delete </h2>
+                            <p class="pageheader-text">Proin placerat ante duiullam scelerisque a velit ac porta, fusce sit amet vestibulum mi. Morbi lobortis pulvinar quam.</p>
+                            <div class="page-breadcrumb">
+                                <nav aria-label="breadcrumb">
+                                    <ol class="breadcrumb">
+
+                                        <li class="breadcrumb-item"><a href="#" class="breadcrumb-link">Pages</a></li>
+                                        <li class="breadcrumb-item active" aria-current="page">Delete</li>
+                                    </ol>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- ============================================================== -->
+                <!-- end pageheader -->
+                <!-- ============================================================== -->
+                <div class="card-body">
+                    <form id="validationform" data-parsley-validate="" novalidate="">
+
+                        <div class="form-group row">
+                            <label class="col-sm-3 col-form-label text-sm-right">Delete Services</label>
+                            <div class="col-sm-6">
+                                <div class="custom-controls-stacked">
+                                    <label class="custom-control custom-checkbox">
+                                        <input id="ck1" name="ck1" type="checkbox" data-parsley-multiple="groups" value="bar" data-parsley-mincheck="2" data-parsley-errors-container="#error-container1" class="custom-control-input"><span class="custom-control-label">Business card website</span>
+                                    </label>
+                                    <label class="custom-control custom-checkbox">
+                                        <input id="ck2" name="ck2" type="checkbox" data-parsley-multiple="groups" value="bar2" data-parsley-mincheck="2" data-parsley-errors-container="#error-container1" class="custom-control-input"><span class="custom-control-label">Landing</span>
+                                    </label>
+                                    <label class="custom-control custom-checkbox">
+                                        <input id="ck3" name="ck3" type="checkbox" data-parsley-multiple="groups" value="bar3" data-parsley-mincheck="2" required="" data-parsley-errors-container="#error-container1" class="custom-control-input"><span class="custom-control-label">Revision</span>
+                                    </label>
+                                    <div id="error-container1"></div>
+                                    <div class="form-group row text-right">
+                                        <div class="col col-sm-10 col-lg-9 offset-sm-1 offset-lg-0">
+                                            <button type="submit" class="btn btn-space btn-primary">Submit</button>
+                                            <button class="btn btn-space btn-secondary">Cancel</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            <!-- ============================================================== -->
+            <!-- footer -->
+            <!-- ============================================================== -->
+            
+            <!-- ============================================================== -->
+            <!-- end footer -->
+            <!-- ============================================================== -->
+        </div>
+        <!-- ============================================================== -->
+        <!-- end main wrapper -->
+        <!-- ============================================================== -->
+    </div>
+    <!-- ============================================================== -->
+    <!-- end main wrapper -->
+    <!-- ============================================================== -->
+    <!-- Optional JavaScript -->
+    <script src="~/admin/assets/vendor/jquery/jquery-3.3.1.min.js"></script>
+    <script src="~/admin/assets/vendor/bootstrap/js/bootstrap.bundle.js"></script>
+    <script src="~/admin/assets/vendor/slimscroll/jquery.slimscroll.js"></script>
+    <script src="~/admin/assets/libs/js/main-js.js"></script>
+</body>
+
+</html>

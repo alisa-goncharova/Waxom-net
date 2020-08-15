@@ -1,0 +1,27 @@
+﻿@model ShopSiteViewModel
+    
+        <div class="container">
+            @foreach (var el in Model.shopSite.listShopItems)
+            {
+                <div class="alert alert-warning">
+                    <div class="cart-info">
+                        <div class="cart-info-content">
+                        <b>Service: </b>@el.site.name<br />
+                            <br/>
+                        <b>Price:   </b> @el.price.ToString("c")
+                        </div>
+                        <div class="servises-block__item-position">
+                        <div class="servises-block__item-btn">
+                            <a href="@Url.Action("Delete","ShopSite",new {id = el.id})">del</a>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            }
+            <hr />
+            <div class="btn-position">
+                <a class="btn btn-danger" asp-controller="Order" asp-action="Checkout">Pay Order</a>
+            </div>
+        </div>
+        
+   

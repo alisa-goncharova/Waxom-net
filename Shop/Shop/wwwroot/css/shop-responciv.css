@@ -1,0 +1,132 @@
+@media screen and (max-width: 2560px){
+/*.menu-btn {
+	display: none;
+}*/
+.section{
+	display: none;
+}
+
+}
+
+@media screen and (max-width: 1440px){  /*and min-width: 1024px*/
+
+}
+@media screen and (max-width: 1024px ){  /*and min-width: 768px*/
+
+ }
+ @media screen and (max-width: 768px){ 
+.section {
+	display: block;
+}
+.menu{
+	justify-content: flex-start;
+	padding-left: 15px;
+}
+.menu-container{
+	display: none;
+}
+.menu-block{
+	padding-top: 45px;
+}
+.cart-link-responcive {
+	
+}
+.cart-link-responcive a span svg{
+	width: 30px;
+}
+.menu-btn{
+	
+}
+.servises-block__item:nth-child(2){
+	margin-right:0px;
+}
+ 
+}
+ @media screen and (max-width: 425px){  /*and min-width: 768px*/
+ 
+ .menu-btn{
+ 	width: 50px;
+ 	transform: translateY(-59px);
+
+ }
+.cart-link-responcive{
+	display: none;
+}
+.none a{
+	display: block;
+}
+.menu-nav_active{
+	height: auto;
+	position: absolute;
+	z-index: 2;
+
+}
+.menu-block{
+	position: relative;
+	justify-content: flex-end;
+	padding-top:0;
+}
+.menu-nav{
+	position: absolute;
+	border-radius: 25px 25px 25px 25px;
+	right: 100px;
+	padding-right: 60px;
+	padding-left:60px;
+	padding-top: 25px;
+	padding-bottom: 25px;
+	box-shadow: 5px 3px 20px 2px black;
+	transform: translateY(90px);
+}
+.menu-nav a{
+	display: block;
+	text-align: center;
+
+}
+.footer-content__item{
+	padding-bottom: 20px;
+}
+.footer-content__item-logo{
+	justify-content: center;
+}
+.footer-content__item-logo img{
+	position: relative;
+}
+.footer-content__item-logo p{
+	padding-left: 0;
+}
+.footer-content__item-title{
+	justify-content: center;
+}
+.servises-block__item{
+	margin-right:0px;
+}
+.servises-block__item img {
+    width: 200px;
+}
+
+
+}
+  @media screen and (max-width: 375px){  /*and min-width: 768px*/
+ .footer-content__item-icon-instance{
+	margin-bottom: 10px;
+}
+.footer-content__item-icon-instance{
+	width: calc(100%/3);
+}
+.footer-content__item-icon{
+	max-width: 110px
+}
+}
+  @media screen and (max-width: 320px){  /*and min-width: 768px*/
+.menu-logo{
+	padding-right: 0px;
+}
+}
+
+/*4k = 2560px
+laptop l = 1440px
+laptop = 1024px
+tablet = 768px
+mobile l = 425px
+mobile m = 375px
+mobile s = 320px*/

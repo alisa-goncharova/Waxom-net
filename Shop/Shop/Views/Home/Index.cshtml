@@ -1,0 +1,414 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!--  изменить описание  -->
+    <!-- <meta name="description" content="Описание страницы сайта." />
+    <meta name="description" content="Агентство интернет-маркетинга и интернет-рекламы ConvertMonster: создание Landing Page, настройка контекстной рекламы, SEO-анализ, эффективный email-маркетинг." /> -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@700&family=Roboto:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@700&family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@700&family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Hammersmith+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="~/css/swiper.min.css">
+    <link rel="stylesheet" href="~/css/style.css">
+    <link rel="stylesheet" href="~/css/responsive.css">
+
+    <title>Waxom</title>
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+            <nav class="menu" id="home">
+                <div class=menu-logo>
+                    <img id="Gradient1" src="img/header/header-logo.svg" alt="">
+                    <p>Waxom</p>
+                </div>
+                <div class="menu-container">
+                    <ul>
+                        <li><a href="@Url.Action("Index" , "Home")">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#teams">Teams</a></li>
+                        <li><a href="#how-it-works">How it Works?</a></li>
+                        <li><a asp-controller="Sites" asp-action="List">Shop</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li class="cart-link">
+                            <a href="@Url.Action("Index" , "ShopSite")">
+                                <span>
+                                    <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                         viewBox="0 0 321.2 321.2" style="enable-background:new 0 0 321.2 321.2;" xml:space="preserve" fill="white">
+<g>
+                                    <g>
+                                    <path d="M306.4,313.2l-24-223.6c-0.4-3.6-3.6-6.4-7.2-6.4h-44.4V69.6c0-38.4-31.2-69.6-69.6-69.6c-38.4,0-69.6,31.2-69.6,69.6
+      v13.6H46c-3.6,0-6.8,2.8-7.2,6.4l-24,223.6c-0.4,2,0.4,4,1.6,5.6c1.2,1.6,3.2,2.4,5.2,2.4h278c2,0,4-0.8,5.2-2.4
+      C306,317.2,306.8,315.2,306.4,313.2z M223.6,123.6c3.6,0,6.4,2.8,6.4,6.4c0,3.6-2.8,6.4-6.4,6.4c-3.6,0-6.4-2.8-6.4-6.4
+      C217.2,126.4,220,123.6,223.6,123.6z M106,69.6c0-30.4,24.8-55.2,55.2-55.2c30.4,0,55.2,24.8,55.2,55.2v13.6H106V69.6z
+       M98.8,123.6c3.6,0,6.4,2.8,6.4,6.4c0,3.6-2.8,6.4-6.4,6.4c-3.6,0-6.4-2.8-6.4-6.4C92.4,126.4,95.2,123.6,98.8,123.6z M30,306.4
+      L52.4,97.2h39.2v13.2c-8,2.8-13.6,10.4-13.6,19.2c0,11.2,9.2,20.4,20.4,20.4c11.2,0,20.4-9.2,20.4-20.4c0-8.8-5.6-16.4-13.6-19.2
+      V97.2h110.4v13.2c-8,2.8-13.6,10.4-13.6,19.2c0,11.2,9.2,20.4,20.4,20.4c11.2,0,20.4-9.2,20.4-20.4c0-8.8-5.6-16.4-13.6-19.2V97.2
+      H270l22.4,209.2H30z" />
+      
+  </g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g>
+</svg>
+                                </span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <!-- Адаптивное меня новигации -- начало  -->
+            <div class="section">
+                <div class="menu-block">
+                    <nav class="menu-nav">
+                        <a href="@Url.Action("Index" , "Home")">HOME</a>
+                        <a href="#about">ABOUT</a>
+                        <a href="#teams">TEAMS</a>
+                        <a href="#how-it-works">HOW IT WORKS?</a>
+                        <a href="@Url.Action("List" , "Sites")">SHOP</a>
+                        <a href="#">CONTACT</a>
+                    </nav>
+                    <a href="#" class="menu-btn">
+                        <span></span>
+                    </a>
+                </div>
+                <div class="cart-link-responcive">
+                    <a href="@Url.Action("Index" , "ShopSite")">
+                        <span>
+                            <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                 viewBox="0 0 321.2 321.2" style="enable-background:new 0 0 321.2 321.2;" xml:space="preserve" fill="white">
+<g>
+<g>
+                            <path d="M306.4,313.2l-24-223.6c-0.4-3.6-3.6-6.4-7.2-6.4h-44.4V69.6c0-38.4-31.2-69.6-69.6-69.6c-38.4,0-69.6,31.2-69.6,69.6
+      v13.6H46c-3.6,0-6.8,2.8-7.2,6.4l-24,223.6c-0.4,2,0.4,4,1.6,5.6c1.2,1.6,3.2,2.4,5.2,2.4h278c2,0,4-0.8,5.2-2.4
+      C306,317.2,306.8,315.2,306.4,313.2z M223.6,123.6c3.6,0,6.4,2.8,6.4,6.4c0,3.6-2.8,6.4-6.4,6.4c-3.6,0-6.4-2.8-6.4-6.4
+      C217.2,126.4,220,123.6,223.6,123.6z M106,69.6c0-30.4,24.8-55.2,55.2-55.2c30.4,0,55.2,24.8,55.2,55.2v13.6H106V69.6z
+       M98.8,123.6c3.6,0,6.4,2.8,6.4,6.4c0,3.6-2.8,6.4-6.4,6.4c-3.6,0-6.4-2.8-6.4-6.4C92.4,126.4,95.2,123.6,98.8,123.6z M30,306.4
+      L52.4,97.2h39.2v13.2c-8,2.8-13.6,10.4-13.6,19.2c0,11.2,9.2,20.4,20.4,20.4c11.2,0,20.4-9.2,20.4-20.4c0-8.8-5.6-16.4-13.6-19.2
+      V97.2h110.4v13.2c-8,2.8-13.6,10.4-13.6,19.2c0,11.2,9.2,20.4,20.4,20.4c11.2,0,20.4-9.2,20.4-20.4c0-8.8-5.6-16.4-13.6-19.2V97.2
+      H270l22.4,209.2H30z" />
+ 
+  </g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g>
+</svg>
+                        </span>
+                    </a>
+                </div>
+            </div>
+            <!-- Адаптивное меня новигации -- конец -->
+            <div class="container">
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+
+                        <div class="swiper-slide">
+                            <div>
+                                <div class="top-title">
+                                    <p>We Are Awesome Creative Agency</p>
+                                </div>
+                                <div class="top-content">
+                                    <p>
+                                        A Business Card Website or a Landing Page
+                                        That Will Boost Your Sales for $100<br>
+                                        Select the way of communication and the time convenient for you to discuss the details of the project<br>
+                                        If you are not happy with the final result, we guarantee a 100% refund.
+                                    </p>
+                                </div>
+                                <div class="top-button">
+                                    <p><a asp-controller="Sites" asp-action="List">Order Website</a> </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div>
+                                <div class="top-title">
+                                    <p>We Are Awesome Creative Agency</p>
+                                </div>
+                                <div class="top-content">
+                                    <p>
+                                        Your website will correctly display on all latest devices and in all popular browsers<br>
+                                        Get a website ready for promotion in 10 days. You can connect a domain and SSL, and start promoting<br> the site.Quick solution.
+                                    </p>
+                                </div>
+                                <div class="top-button">
+                                    <p>
+                                        <a asp-controller="Sites" asp-action="List">Order Website</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div>
+                                <div class="top-title">
+                                    <p>We Are Awesome Creative Agency</p>
+                                </div>
+                                <div class="top-content">
+                                    <p>
+                                        You can update the site and add content on your own in a convenient builder even after the project<br> is finished.
+                                        If you have any questions about the management of the site, you can always get help by<br> contacting the support team.
+                                    </p>
+                                </div>
+                                <div class="top-button">
+
+                                    <p>
+                                        <a asp-controller="Sites" asp-action="List">Order Website</a>
+                                    </p>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Add Pagination -->
+                    <div class="swiper-pagination"> </div>
+                </div>
+            </div>
+        </header>
+        <!-- Новые блоки-->
+        <div class="about" id="about">
+            <div class="about-image">
+                <img src="img/about/left.png" alt="">
+            </div>
+            <div class="about-content">
+                <div class="about-content-title">
+                    <p>OUR STORY</p>
+                </div>
+                <div class="about-content-items">
+                    <p>
+                        We’d been staying the most widely-used and known developer of website builders in Eastern Europe<br> for over 15 years.
+                        Over 60M businesses are running social media pages. We made it possible for every<br> entrepreneur to complement their page with a website created automatically
+                    </p>
+
+                </div>
+                <div class="about-content-items">
+                    <p>
+                        Users from the biggest social network in Russia and CIS countries can get an online store or a website <br>automatically created for them in minutes.
+                    </p>
+                </div>
+                <div class="top-button about-button">
+                    <p>
+                        <a asp-controller="Sites" asp-action="List">Order Website</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="team" id="teams">
+            <div class="team-top">
+                <div class="team-top__title">
+                    <p>Meet Our Amazing Team</p>
+                </div>
+                <div class="team-top__subtitle">
+                    <p>Lorem doir sit proin gravida vel velit</p>
+                </div>
+            </div>
+
+
+            <div class="team-middle">
+                <div class="team-middle__items">
+                    <div class="items-image">
+                        <img src="~/img/team/items.png" alt="">
+                    </div>
+                    <div class="items-title">
+                        <p>Pet Romak</p>
+                    </div>
+                    <div class="items-subtitle">
+                        <p>Design</p>
+                    </div>
+                </div>
+
+
+                <div class="team-middle__items">
+                    <div class="items-image">
+                        <img src="~/img/team/items.png" alt="">
+                    </div>
+                    <div class="items-title">
+                        <p>Pet Romak</p>
+                    </div>
+                    <div class="items-subtitle">
+                        <p>Design</p>
+                    </div>
+                </div>
+
+                <div class="team-middle__items">
+                    <div class="items-image">
+                        <img src="~/img/team/items.png" alt="">
+                    </div>
+                    <div class="items-title">
+                        <p>Pet Romak</p>
+                    </div>
+                    <div class="items-subtitle">
+                        <p>Design</p>
+                    </div>
+                </div>
+
+                <div class="team-middle__items">
+                    <div class="items-image">
+                        <img src="~/img/team/items.png" alt="">
+                    </div>
+                    <div class="items-title">
+                        <p>Pet Romak</p>
+                    </div>
+                    <div class="items-subtitle">
+                        <p>Design</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="team-bottom">
+                <div class="team-bottom__title">
+                    <p>Become part of our dream team, et's join us!</p>
+                </div>
+                <div class="team-bottom__btn top-button">
+                    <p>
+                        <a>We Are Hiring</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <section class="how-it-works" id="how-it-works">
+            <div class="works-top">
+                <div class="works-top-title">
+                    <p>How it Works?</p>
+                </div>
+                <div class="works-steps">
+
+                    <div class="works-steps__item">
+                        <div class="works-steps__item-line"></div>
+                        <div class="works-steps__item-icon">
+                            <span>1</span>
+                        </div>
+                        <div class="works-steps__item-content">
+                            <p>Fill Order Form</p>
+                            <div class="works-steps__item-content-title">
+                                <p>
+                                    Fill order for creating a website: in form, you can link web sites that you like,
+                                    chouse the color scheme you’d prefer, fill contact details and social media links.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="works-steps__item">
+                        <div class="works-steps__item-line"></div>
+                        <div class="works-steps__item-icon">
+                            <span>2</span>
+                        </div>
+                        <div class="works-steps__item-content">
+                            <p>Confirm Order</p>
+                            <div class="works-steps__item-content-title">
+                                <p>
+                                    After order, you must confirm it by making payment — we will contact you
+                                    immediately after we receive it.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="works-steps__item">
+                        <div class="works-steps__item-line"></div>
+                        <div class="works-steps__item-icon">
+                            <span>3</span>
+                        </div>
+                        <div class="works-steps__item-content">
+                            <p>Control the Process</p>
+                            <div class="works-steps__item-content-title">
+                                <p>
+                                    You communicate with us directly using the way of communication convenient for you.
+                                    More that 80% of sites ordered from us are finished in less than 15 days.
+                                    We will show you a ready home page after few days after the start of work.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="works-steps__item">
+                        <div class="works-steps__item-icon">
+                            <span>4</span>
+                        </div>
+                        <div class="works-steps__item-content">
+                            <p>Сompletion of Work and Accept the Project</p>
+                            <div class="works-steps__item-content-title">
+                                <p>
+                                    After we shows you the final version of the web site (and after making any final
+                                    changes you will ask for), the site will be transferred to you and the work on
+                                    the project will be completed. We will be ask you to leave feedback about our work.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <div class="footer-block">
+                <div class="footer-content">
+                    <div class="footer-content__item">
+                        <div class="footer-content__item-logo">
+                            <img src="img/header/header-logo.svg" alt="">
+                            <p>Waxom</p>
+                        </div>
+                        <div class="footer-content__item-descriotion">
+                            <p>
+                                The front-end developer of this web site is - Goncharova Alisa.<br>
+                                This web site was created as an example of a portfolio and<br> does not claim
+                                any rights, all coincidences with real people<br> are an accident.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="footer-content__item">
+                        <div class="footer-content__item-title">
+                            <p>Our Studio</p>
+                        </div>
+                        <div class="footer-content__item-strit">
+                            <img src="img/footer/location-icon.svg" alt="">
+                            <p>Ruko cucruk, Jl. Radio luar dalem jos<br> No.12 - 13, Kalideres - Jacarta Barat<br> 11489 - Indonesia</p>
+                        </div>
+                        <div class="footer-content__item-number">
+                            <img src="img/footer/phone.svg" alt="">
+                            <p>+375(33)315-23-96</p>
+                        </div>
+                    </div>
+                    <div class="footer-content__item">
+                        <div class="footer-content__item-title">
+                            <p>Stay in Touch</p>
+                        </div>
+                        <div class="footer-content__item-icon">
+
+                            <div class="footer-content__item-icon-instance">
+                                <a href="https://telegram.im/@@q_qq_q" target="_blank"><img src="img/footer/facebook.svg" alt="Нет фейсбука :)"></a>
+                            </div>
+
+                            <div class="footer-content__item-icon-instance">
+                                <a href="https://telegram.im/@@q_qq_q" target="_blank"><img src="img/footer/twitter.svg" alt="Нет твиттера"></a>
+                            </div>
+
+                            <div class="footer-content__item-icon-instance">
+                                <a href="https://vk.com/id491770106" target="_blank"><img src="img/footer/vk.svg" alt=""></a>
+                            </div>
+
+                            <div class="footer-content__item-icon-instance">
+                                <a href="https://www.instagram.com/Alice_frontend" target="_blank"><img src="img/footer/instagram.svg" alt=""></a>
+                            </div>
+
+                            <div class="footer-content__item-icon-instance">
+                                <a href="https://telegram.im/@@q_qq_q" target="_blank"><img src="img/footer/telegram.svg" alt=""></a>
+                            </div>
+
+                            <div class="footer-content__item-icon-instance">
+                                <a href="https://vk.com/id491770106" target="_blank"><img src="img/footer/youtube.svg" alt="Нет вк)"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="~/js/jquery-2.2.4.min.js"></script>
+    <script src="~/js/swiper.min.js"></script>
+    <script src="~/js/min.js"></script>
+</body>
+</html>
+

@@ -1,0 +1,90 @@
+﻿@model Order 
+
+    <div class="contact" id="contact">
+        <div class="contact-left">
+            <div class="contact-title">
+                <p>
+                    Checkout
+                </p>
+            </div>
+            <div class="contact-forms">
+                <form action="Checkout" method="post">
+                    <input type="text" asp-for="name" placeholder="Name" required="">
+                    <input type="text" asp-for="surname" placeholder="Surname" required="">
+                    <input type="text" asp-for="adress" placeholder="Adress" required="">
+                    <input type="text" asp-for="phone" placeholder="Phone" required="">
+                    <input type="email" asp-for="email" placeholder="Email" required="">
+                    <div class="contact-btn">
+                        <input type="submit" value="submit">
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="contact-right">
+            <div class="contact-right-title">
+                <p>Technologies</p>
+            </div>
+            <div class="contact-technologies">
+
+                <div class="contact-technologies__item">
+                    <div class="contact-technologies__item-title">
+                        <p>HTML5</p>
+                    </div>
+                    <div class="contact-technologies__item-img">
+                        <img src="~/img/contacts/icon-html5.svg" alt="">
+                    </div>
+                </div>
+
+                <div class="contact-technologies__item">
+                    <div class="contact-technologies__item-title">
+                        <p>CSS3</p>
+                    </div>
+
+                    <div class="contact-technologies__item-img">
+                        <img src="~/img/contacts/icon-css3.svg" alt="">
+                    </div>
+                </div>
+
+                <div class="contact-technologies__item">
+                    <div class="contact-technologies__item-title">
+                        <p>BOOTSTRAP</p>
+                    </div>
+
+                    <div class="contact-technologies__item-img">
+                        <img src="~/img/contacts/icon-bootstrap.svg" alt="">
+                    </div>
+                </div>
+
+                <div class="contact-technologies__item">
+                    <div class="contact-technologies__item-title">
+                        <p>GIT</p>
+                    </div>
+
+                    <div class="contact-technologies__item-img">
+                        <img src="~/img/contacts/icon-git.svg" alt="">
+                    </div>
+                </div>
+
+                <div class="contact-technologies__item">
+                    <div class="contact-technologies__item-title">
+                        <p>JQUERY</p>
+                    </div>
+
+                    <div class="contact-technologies__item-img">
+                        <img src="~/img/contacts/icon-jQuery.svg" alt="">
+                    </div>
+                </div>
+
+                <div class="contact-technologies__item">
+                    <div class="contact-technologies__item-title">
+                        <p>SASS</p>
+                    </div>
+
+                    <div class="contact-technologies__item-img">
+                        <img src="~/img/contacts/icon-sass.svg" alt="">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>

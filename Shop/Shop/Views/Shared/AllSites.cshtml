@@ -1,0 +1,14 @@
+﻿@model Site
+
+    <div class="servises-block__item">
+        <img src="@Model.img" alt="@Model.name">
+        <div class="servises-block__item-title">
+            <p>@Model.name</p>
+        </div>
+        <div class="servises-block__item-subtitle">
+            <p>Цена: @Model.price.ToString("c")</p>
+        </div>
+        <div class="servises-block__item-btn">
+            <a asp-controller="ShopSite" asp-action="addToSite" asp-route-id="@Model.id">Add to cart</a>
+        </div>
+    </div>

@@ -1,0 +1,141 @@
+﻿.container, .contact {
+    max-width: 1290px;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.contact p, form {
+    padding: 0;
+    margin: 0;
+}
+
+.contact {
+    padding-top: 70px;
+    padding-bottom: 70px;
+    display: flex;
+}
+
+.contact-title {
+    padding-bottom: 60px;
+    font-size: 22px;
+    font-family: "Playfair Display";
+    font-weight: 900;
+    color: #5a5763;
+    text-transform: uppercase;
+}
+
+.contact-forms {
+    max-width: 500px;
+    max-height: 462px;
+    margin-right: 60px;
+}
+
+    .contact-forms form {
+        display: flex;
+        flex-direction: column;
+        border-radius: 0;
+        width: 500px;
+    }
+
+    .contact-forms input {
+        margin-bottom: 20px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        padding-left: 15px;
+        border-radius: 1px solid #e5e5e5;
+    }
+
+        .contact-forms input::-ms-input-placeholder {
+            color: #b3b1b7;
+            padding-left: 20px;
+            padding-top: 20px;
+            font-family: "Roboto";
+            font-size: 14px;
+        }
+
+        .contact-forms input::placeholder {
+            color: #b3b1b7;
+            padding-left: 20px;
+            padding-top: 20px;
+            font-family: "Roboto";
+            font-size: 14px;
+        }
+
+    .contact-forms textarea {
+        margin-bottom: 20px;
+        border-radius: 1px solid #e5e5e5;
+        padding-left: 15px;
+    }
+
+        .contact-forms textarea::-ms-input-placeholder {
+            color: #b3b1b7;
+            padding-left: 20px;
+            padding-top: 20px;
+            font-family: "Roboto";
+            font-size: 14px;
+        }
+
+        .contact-forms textarea::placeholder {
+            color: #b3b1b7;
+            padding-left: 20px;
+            padding-top: 20px;
+            font-family: "Roboto";
+            font-size: 14px;
+        }
+
+.contact-btn input {
+    border: 1px solid #00e0d0;
+    background-color: #fff;
+    color: #00e0d0;
+    max-width: 120px;
+    padding-left: 35px;
+    padding-right: 35px;
+    text-transform: uppercase;
+}
+
+.contact-left {
+    float: left;
+}
+
+.contact-right {
+    display: flex;
+}
+
+    .contact-right img {
+        width: 80px;
+    }
+
+.contact-right-title {
+    display: block;
+}
+
+    .contact-right-title p {
+        font-size: 22px;
+        font-family: "Playfair Display";
+        font-weight: 900;
+        color: #5a5763;
+        text-transform: uppercase;
+    }
+
+.contact-technologies {
+    display: flex;
+    flex-wrap: wrap;
+    width: calc(100%/2);
+}
+
+.contact-technologies__item {
+    padding: 30px;
+}
+
+.contact-technologies__item-title {
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+/*.cart-info b{
+    color: red;
+}*/
